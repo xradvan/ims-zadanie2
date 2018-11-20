@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zadanie2.ITPage"
+             Title="Inžinierska informatika">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="V tejto sekcií sa nachádza odporúčaný študijný plán profesijnej domény Inžinierska informatika v mechatronike" Margin="10"/>
+            <ScrollView Orientation="Horizontal">
+                <TableView Intent="Settings">
+                    <TableRoot x:Name="tableRoot">
+
+                    </TableRoot>
+                </TableView>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

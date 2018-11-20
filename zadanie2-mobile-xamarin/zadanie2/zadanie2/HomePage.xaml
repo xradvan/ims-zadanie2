@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zadanie2.HomePage"
+             Title="Domov">
+    <ContentPage.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="iOS, Android" Value="10,10,10,10" />
+            </OnPlatform>
+        </ContentPage.Padding>
+    <StackLayout>
+        <Image Source="ims_logo_black.png" HorizontalOptions="CenterAndExpand" />
+        <Label Text="Vitajte!" FontSize="Medium" HorizontalOptions="Center"/>
+        <Label Text="Mobilná aplikácia pre zadanie č.2 slúži na propagáciu jednotlivých aplikačných oblastí mechatroniky. 
+               Údaje o aplikačných oblastiach sú brané dynamicky zo stránky http://www.mechatronika.cool. Jednotlivé časti si môžete prezrieť v sekcí Aplikačné oblasti." />
+        <Image Source="mechatronika_claim.png"  Margin="10"/>
+    </StackLayout>
+</ContentPage>

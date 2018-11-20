@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="using:zadanie2"
+             x:Class="zadanie2.MasterPage"
+             Title="Master Page">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS, Android" Value="10,40,0,0" />
+        </OnPlatform>
+    </ContentPage.Padding>
+    <StackLayout>
+        <Image Source="logo_fei.png" Margin="20"/>
+        <ListView x:Name="listView" x:FieldModifier="public">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type local:MasterPageItem}">
+                    <local:MasterPageItem Title="Domov" IconSource="home_icon.png" TargetType="{x:Type local:HomePage}" />
+                    <local:MasterPageItem Title="Aplikačné oblasti" IconSource="cap_icon.png" TargetType="{x:Type local:AreaPage}" />
+                    <local:MasterPageItem Title="Inžinierska informatika" IconSource="it_icon.png" TargetType="{x:Type local:ITPage}" />
+                    <local:MasterPageItem Title="Termíny" IconSource="events_icon.png" TargetType="{x:Type local:EventsPage}" />
+                    <local:MasterPageItem Title="Novinky" IconSource="news_icon.png" TargetType="{x:Type local:NewsPage}" />
+                    <local:MasterPageItem Title="O aplikácií" IconSource="about_icon.png" TargetType="{x:Type local:AboutPage}" />
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding IconSource}" />
+                            <Label Grid.Column="1" Text="{Binding Title}" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

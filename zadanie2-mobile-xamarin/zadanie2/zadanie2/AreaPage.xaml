@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zadanie2.AreaPage"
+             Title="Aplikačné oblasti">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS, Android" Value="10,10,10,10" />
+        </OnPlatform>
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label x:Name="errorLabel"  IsVisible="False"/>
+                <Picker Title="Vybrať Aplikačnú oblasť" x:Name="areaPicker" SelectedIndexChanged="OnPickerSelectedIndexChanged"/>
+                <ScrollView >
+                    <StackLayout>
+                        <StackLayout x:Name="spansStack"></StackLayout>
+                        <StackLayout x:Name="areaStack"></StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

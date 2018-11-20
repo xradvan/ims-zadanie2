@@ -1,0 +1,41 @@
+<div class="container mt-5">
+  <div class="jumbotron">
+    <h1>Novinky</h1>
+  </div>
+    <h3>Nová novinka</h3>
+      <div class="container my-4">
+      <button type="button" class="btn btn-success" (click)="pridavanieToggle()"><i class="fa fa-plus-circle"></i> Pridať novinku</button>
+      <div class="container mt-3" *ngIf="pridavanieRezim">
+        <div class="jumbotron">
+            <form #addForm="ngForm" (ngSubmit)="addNovinka(); addForm.reset()">
+                <div class="form-group">
+                  <label for="nazov">Názov novinky</label>
+                  <input type="text" [(ngModel)]="novinkaToAdd.nazov" name="nazov" class="form-control col-lg-6" id="nazov">
+                  <label for="datum">Dátum</label>
+                  <input type="text" [(ngModel)]="novinkaToAdd.datum" name="datum"  class="form-control col-lg-6" bsDatepicker id="datum">
+                  <label for="popis" class="mt-2">Bližší popis</label>
+                  <textarea id="popis" [(ngModel)]="novinkaToAdd.text" name="text"  class="form-control" cols="30" rows="10"></textarea>
+                  <button type="submit" class="btn btn-danger ml-2 mt-4"><i class="fa fa-save"></i> Uložiť</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+    <h3>Zoznam noviniek</h3>
+    <accordion class="mt-3">
+        <accordion-group *ngFor="let novinka of novinky" heading="{{novinka.nazov}}">
+          <form #updateForm="ngForm" (ngSubmit)="updateNovinka(novinka);">
+            <div class="form-group">
+              <label for="nazov">Názov novinky</label>
+              <input type="text" [(ngModel)]="novinka.nazov" name="nazov" class="form-control col-lg-6" id="nazov">
+              <label for="datum">Dátum</label>
+              <input type="text" [(ngModel)]="novinka.datum" name="datum" class="form-control col-lg-6" bsDatepicker id="datum" [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD' }">
+              <label for="popis" class="mt-2">Bližší popis</label>
+              <textarea id="popis" [(ngModel)]="novinka.text" name="text"  class="form-control" cols="30" rows="10">{{novinka.text}}</textarea>
+              <button type="submit" class="btn btn-danger ml-2 mt-4"><i class="fa fa-save"></i> Uložiť</button>
+            </div>
+        </form>
+        </accordion-group>
+      </accordion>
+      <div class="mb-5"></div>
+</div>

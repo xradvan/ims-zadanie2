@@ -1,0 +1,41 @@
+<div class="container mt-5">
+  <div class="jumbotron">
+    <h1>Termíny</h1>
+  </div>
+    <h3>Nový termín</h3>
+      <div class="container my-4">
+      <button type="button" class="btn btn-success" (click)="pridavanieToggle()"><i class="fa fa-plus-circle"></i> Pridať termín</button>
+      <div class="container mt-3" *ngIf="pridavanieRezim">
+        <div class="jumbotron">
+            <form #addForm="ngForm" (ngSubmit)="addTermin(); addForm.reset()">
+                <div class="form-group">
+                  <label for="nazov">Názov termínu</label>
+                  <input type="text" [(ngModel)]="terminToAdd.nazov" name="nazov" class="form-control col-lg-6" id="nazov">
+                  <label for="datum">Dátum</label>
+                  <input type="text" [(ngModel)]="terminToAdd.datum" name="datum"  class="form-control col-lg-6" bsDatepicker id="datum">
+                  <label for="popis" class="mt-2">Bližší popis</label>
+                  <textarea id="popis" [(ngModel)]="terminToAdd.text" name="text"  class="form-control" cols="30" rows="10"></textarea>
+                  <button type="submit" class="btn btn-danger ml-2 mt-4"><i class="fa fa-save"></i> Uložiť</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+    <h3>Zoznam termínov</h3>
+    <accordion class="mt-3">
+        <accordion-group *ngFor="let termin of terminy" heading="{{termin.nazov}}">
+          <form #updateForm="ngForm" (ngSubmit)="updateTermin(termin);">
+            <div class="form-group">
+              <label for="nazov">Názov termínu</label>
+              <input type="text" [(ngModel)]="termin.nazov" name="nazov" class="form-control col-lg-6" id="nazov">
+              <label for="datum">Dátum</label>
+              <input type="text" [(ngModel)]="termin.datum" name="datum" class="form-control col-lg-6" bsDatepicker id="datum" [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD' }">
+              <label for="popis" class="mt-2">Bližší popis</label>
+              <textarea id="popis" [(ngModel)]="termin.text" name="text"  class="form-control" cols="30" rows="10">{{termin.text}}</textarea>
+              <button type="submit" class="btn btn-danger ml-2 mt-4"><i class="fa fa-save"></i> Uložiť</button>
+            </div>
+        </form>
+        </accordion-group>
+      </accordion>
+    <div class="mb-5"></div>
+</div>

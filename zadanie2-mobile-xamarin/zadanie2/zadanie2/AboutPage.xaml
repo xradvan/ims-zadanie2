@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zadanie2.AboutPage"
+             Title="O aplikácií">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS, Android" Value="20,20,20,20" />
+        </OnPlatform>
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Zadanie č. 2 z predmetu IMS"  HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+            <Label Text="Verzia: 1.0.0.0"  HorizontalOptions="CenterAndExpand" FontSize="Small"/>
+            
+            <Label Text="Autor: Peter Radvan" Margin="20"  HorizontalOptions="CenterAndExpand" />
+            <Image Source="author.JPG" HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

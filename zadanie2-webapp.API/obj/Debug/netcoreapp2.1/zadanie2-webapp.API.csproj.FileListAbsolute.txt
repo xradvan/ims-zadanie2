@@ -1,0 +1,14 @@
+D:\FEI STU\Ing\Semester_1\IMS\zadanie2-webapp_clone\ims-zadanie2-xradvan\zadanie2-webapp.API\bin\Debug\netcoreapp2.1\zadanie2-webapp.API.deps.json
+D:\FEI STU\Ing\Semester_1\IMS\zadanie2-webapp_clone\ims-zadanie2-xradvan\zadanie2-webapp.API\bin\Debug\netcoreapp2.1\zadanie2-webapp.API.runtimeconfig.json
+D:\FEI STU\Ing\Semester_1\IMS\zadanie2-webapp_clone\ims-zadanie2-xradvan\zadanie2-webapp.API\bin\Debug\netcoreapp2.1\zadanie2-webapp.API.runtimeconfig.dev.json
+D:\FEI STU\Ing\Semester_1\IMS\zadanie2-webapp_clone\ims-zadanie2-xradvan\zadanie2-webapp.API\bin\Debug\netcoreapp2.1\zadanie2-webapp.API.dll
+D:\FEI STU\Ing\Semester_1\IMS\zadanie2-webapp_clone\ims-zadanie2-xradvan\zadanie2-webapp.API\bin\Debug\netcoreapp2.1\zadanie2-webapp.API.pdb
+D:\FEI STU\Ing\Semester_1\IMS\zadanie2-webapp_clone\ims-zadanie2-xradvan\zadanie2-webapp.API\obj\Debug\netcoreapp2.1\zadanie2-webapp.API.csprojAssemblyReference.cache
+D:\FEI STU\Ing\Semester_1\IMS\zadanie2-webapp_clone\ims-zadanie2-xradvan\zadanie2-webapp.API\obj\Debug\netcoreapp2.1\zadanie2-webapp.API.csproj.CoreCompileInputs.cache
+D:\FEI STU\Ing\Semester_1\IMS\zadanie2-webapp_clone\ims-zadanie2-xradvan\zadanie2-webapp.API\obj\Debug\netcoreapp2.1\zadanie2-webapp.API.RazorAssemblyInfo.cache
+D:\FEI STU\Ing\Semester_1\IMS\zadanie2-webapp_clone\ims-zadanie2-xradvan\zadanie2-webapp.API\obj\Debug\netcoreapp2.1\zadanie2-webapp.API.RazorAssemblyInfo.cs
+D:\FEI STU\Ing\Semester_1\IMS\zadanie2-webapp_clone\ims-zadanie2-xradvan\zadanie2-webapp.API\obj\Debug\netcoreapp2.1\zadanie2-webapp.API.AssemblyInfoInputs.cache
+D:\FEI STU\Ing\Semester_1\IMS\zadanie2-webapp_clone\ims-zadanie2-xradvan\zadanie2-webapp.API\obj\Debug\netcoreapp2.1\zadanie2-webapp.API.AssemblyInfo.cs
+D:\FEI STU\Ing\Semester_1\IMS\zadanie2-webapp_clone\ims-zadanie2-xradvan\zadanie2-webapp.API\obj\Debug\netcoreapp2.1\zadanie2-webapp.API.RazorTargetAssemblyInfo.cache
+D:\FEI STU\Ing\Semester_1\IMS\zadanie2-webapp_clone\ims-zadanie2-xradvan\zadanie2-webapp.API\obj\Debug\netcoreapp2.1\zadanie2-webapp.API.dll
+D:\FEI STU\Ing\Semester_1\IMS\zadanie2-webapp_clone\ims-zadanie2-xradvan\zadanie2-webapp.API\obj\Debug\netcoreapp2.1\zadanie2-webapp.API.pdb

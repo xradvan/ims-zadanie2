@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "d:\\FEI STU\\Ing\\Semester_1\\IMS\\zadanie2-webapp_clone\\ims-zadanie2-xradvan\\zadanie2-webapp.API\\zadanie2-webapp.API.csproj",
+  "TargetFramework": "netcoreapp2.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "MVC-2.1",
+    "LanguageVersion": "2.1",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-2.1"
+      }
+    ]
+  }
+}
